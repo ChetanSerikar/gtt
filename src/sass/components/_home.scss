@@ -1,0 +1,22 @@
+.home {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  // height: 100vh;
+  background-origin: padding-box;
+  overflow: hidden;
+  transition: background-image 0.5s;
+}
+.home_grid {
+  display: grid;
+  grid-auto-flow: column;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  grid-auto-columns: 100%;
+}
+.home_grid > * {
+  scroll-snap-align: start;
+}
+.home_grid::-webkit-scrollbar {
+  appearance: none;
+}

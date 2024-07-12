@@ -1,0 +1,96 @@
+.login,
+.signup {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  & > * {
+    width: 60% !important;
+  }
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  &__desc {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #878787;
+  }
+}
+.form {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  &__label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  &__input {
+    display: block;
+    border: 1px solid #ededed;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0.875rem;
+
+    &::placeholder {
+      color: #878787;
+      font-weight: 500;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__fp {
+    display: block;
+    width: 100%;
+    text-align: end;
+    margin-bottom: 1.5rem;
+  }
+  &__submit {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-width: 50%;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #fe8c00;
+    border-radius: 6.25rem;
+    border: none;
+  }
+}
+.signup {
+  .tandc {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    &__checkbox {
+      margin-right: 0.625rem;
+    }
+
+    a {
+      color: #fe8c00;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-inline: 0.375rem;
+    }
+  }
+}
+@media (max-width: 720px) {
+  .login,
+  .signup {
+    width: 100%;
+    & > * {
+      width: 100% !important;
+    }
+  }
+  .form {
+    &__submit {
+      min-width: 100%;
+    }
+  }
+}

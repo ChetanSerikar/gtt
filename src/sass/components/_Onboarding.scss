@@ -1,0 +1,63 @@
+.onboarding {
+  margin: 374px 32px 40px;
+
+  background-color: #fe8c00;
+  border-radius: 3rem;
+  &__card {
+    padding: 32px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    &-desc {
+      color: white;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+    }
+    &-progress {
+      display: flex;
+      gap: 0.25rem;
+      margin-bottom: 6.125rem;
+      .progress {
+        width: 1.5rem;
+        height: 0.375rem;
+        border-radius: 6.25rem;
+        background-color: #c2c2c2;
+        &.active {
+          background-color: white;
+        }
+      }
+    }
+    &-buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      & > * {
+        border: none;
+        background-color: #fe8c00;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    &-next {
+      display: flex;
+      gap: 0.625rem;
+      align-items: center;
+    }
+  }
+}
+
+.onboard__last {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 1rem;
+}

@@ -1,0 +1,42 @@
+.altsignin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 1.5625rem;
+    justify-content: space-between;
+    &-line {
+      flex: 1;
+      height: 0.5px;
+      background-color: #878787;
+      top: 50%;
+      z-index: 3;
+    }
+    &-text {
+      background-color: white;
+      color: #878787;
+      font-weight: 500;
+      font-size: 0.875rem;
+    }
+  }
+  &__button {
+    &-goggle {
+      display: inline-block;
+      width: fit-content;
+      border: 1px solid #878787;
+      border-radius: 50%;
+      padding: 0.5rem;
+      background-color: white;
+      margin-bottom: 2rem;
+    }
+  }
+  &__register {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
