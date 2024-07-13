@@ -78,6 +78,9 @@ button {
 .onboarding__card-progress .progress.active {
   background-color: white;
 }
+.onboarding__card .last-margin {
+  margin-bottom: 1.5rem !important;
+}
 .onboarding__card-buttons {
   width: 100%;
   display: flex;
@@ -109,7 +112,7 @@ button {
   background-origin: padding-box;
   overflow: hidden;
   transition: background-image 0.5s;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .home_grid {

@@ -19,32 +19,6 @@ const Home = () => {
       conatinerRef.current.scrollLeft +
       conatinerRef.current.getBoundingClientRect().width;
   };
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (conatinerRef.current) {
-  //       console.log(
-  //         "scrooleft",
-  //         conatinerRef.current.scrollLeft,
-  //         "width",
-  //         conatinerRef.current.getBoundingClientRect().width
-  //       );
-  //       setCurrOnboard(
-  //         Math.floor(
-  //           (conatinerRef.current.scrollLeft + 30) /
-  //             conatinerRef.current.getBoundingClientRect().width
-  //         )
-  //       );
-  //     }
-  //   };
-
-  //   const container = conatinerRef.current;
-  //   container.addEventListener("scroll", handleScroll);
-
-  //   // Cleanup the event listener on component unmount
-  //   return () => {
-  //     container.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   const onBordingData = [
     {
@@ -86,6 +60,7 @@ const Home = () => {
               length={onBordingData.length}
               currOnboard={currOnboard}
               setCurrOnboard={handleClick}
+              current={i}
             />
           </section>
         </div>
