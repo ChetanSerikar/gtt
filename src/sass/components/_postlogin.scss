@@ -1,12 +1,14 @@
 .postlogin {
   height: 100vh;
+  display: flex;
+  align-items: end;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-origin: padding-box;
   overflow: hidden;
   &__card {
-    margin-top: 45vh;
+    // margin-top: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -109,6 +109,7 @@ button {
   background-origin: padding-box;
   overflow: hidden;
   transition: background-image 0.5s;
+  height: 100vh;
 }
 
 .home_grid {
@@ -420,6 +421,8 @@ input[type=range]:focus::-webkit-slider-thumb {
 
 .postlogin {
   height: 100vh;
+  display: flex;
+  align-items: end;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -427,7 +430,6 @@ input[type=range]:focus::-webkit-slider-thumb {
   overflow: hidden;
 }
 .postlogin__card {
-  margin-top: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
